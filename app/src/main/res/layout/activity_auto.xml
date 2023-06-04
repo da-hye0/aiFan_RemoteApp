@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/auto_activ"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F3F3">
+
+    <TextView
+        android:id="@+id/tv_auto"
+        android:layout_width="318dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="160
+"
+        android:backgroundTint="#F3F3F3"
+        android:text="AUTO"
+        android:textColor="#676767"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:translationX="170dp"
+        android:translationY="-15dp" />
+
+</LinearLayout>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<!--아직 구체적인 메뉴가 나오지 않아서 일단 #textview로 구현했음-->
+<LinearLayout
+    android:layout_width="330dp"
+    android:layout_height="match_parent"
+    android:layout_gravity ="start"
+    android:background="#FFFFFF"
+    android:id="@+id/drawer"
+    android:orientation="vertical">
+
+
+    <Button
+        android:id="@+id/btn_close"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="64dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:backgroundTint="#07FFFFFF"
+        android:rotationX="360"
+        app:icon="@android:drawable/ic_menu_close_clear_cancel"
+        app:iconTint="#807B7B"
+        app:rippleColor="#00FDFCFC"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+
+    <TextView
+        android:id="@+id/tv_fanName"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:text="My Fan"
+        android:paddingStart="25dp"
+        android:textSize="25sp"
+        android:translationY="30dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"/>
+    <Button
+        android:id="@+id/btn_defaultAV"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:backgroundTint="#07FFFFFF"
+        android:drawableEnd="@drawable/ic_baseline_arrow_right_24"
+        android:elegantTextHeight="false"
+        android:gravity="start"
+        android:text=" 임의 온도,습도 "
+        android:textColor="#757575" />
+
+    <Button
+        android:id="@+id/btn_outerFan"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:backgroundTint="#07FFFFFF"
+        android:drawableEnd="@drawable/ic_baseline_arrow_right_24"
+        android:elegantTextHeight="false"
+        android:gravity="start"
+        android:text=" 다른 사용자 "
+        android:textColor="#757575" />
+
+    <!--<Button
+        android:id="@+id/btn_heatAmount"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:backgroundTint="#07FFFFFF"
+        android:drawableEnd="@drawable/ic_baseline_arrow_right_24"
+        android:elegantTextHeight="false"
+        android:gravity="start"
+        android:text="사용자 정보 설정"
+        android:textColor="#757575" /> -->
+
+    <Button
+        android:id="@+id/btn_help"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:backgroundTint="#07FFFFFF"
+        android:drawableEnd="@drawable/ic_baseline_arrow_right_24"
+        android:elegantTextHeight="false"
+        android:gravity="start"
+        android:text=" 도움말"
+        android:textColor="#757575" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:orientation="vertical"
+        android:translationY="210dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#DADADA">
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/tv_menuInfo"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:text="     선풍기 리모컨"
+            android:textColor="#636363"
+            android:textStyle="bold"
+            android:translationY="5dp" />
+
+        <TextView
+            android:id="@+id/tv_versionInfo"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:text="     Version 1.0" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#DADADA">
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/tv_teamInfo1"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:text="     SIXBASE"
+            android:textStyle="bold"
+            android:textColor="#636363"
+            android:translationY="5dp" />
+
+        <TextView
+            android:id="@+id/tv_teamInfo2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="     2021/capston " />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#DADADA"
+            android:translationY="10dp">
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </LinearLayout>
+</LinearLayout>
+</layout>
